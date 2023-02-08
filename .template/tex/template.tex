@@ -487,23 +487,23 @@ $endif$
 \pagebreak
 
 \makeatletter
-\newcommand{\beginappendix}{
-  \pagebreak
-  \pagenumbering{roman}
-  \setcounter{page}{\value{lastromanpage}}
-  $if(bibliography)$
-    \section*{Literaturverzeichnis}
-    \addcontentsline{toc}{section}{Literaturverzeichnis}
-    $print-bibliography$
-    \pagebreak
-  $endif$
-  \@ifstar{}{
-    \appendix
-    \section*{Appendix}
-    \addcontentsline{toc}{section}{Appendix}
-    \renewcommand{\thesubsection}{\Alph{section}}
-    \stepcounter{section}
-  }
+\newcommand{\beginappendix}{%
+  \pagebreak%
+  \pagenumbering{roman}%
+  \setcounter{page}{\value{lastromanpage}}%
+  $if(bibliography)$%
+    \section*{Literaturverzeichnis}%
+    \addcontentsline{toc}{section}{Literaturverzeichnis}%
+    $print-bibliography$%
+    \pagebreak%
+  $endif$%
+  \@ifstar{}{%
+    \appendix%
+    \section*{Appendix}%
+    \addcontentsline{toc}{section}{Appendix}%
+    \renewcommand{\thesubsection}{\Alph{section}}%
+    \stepcounter{section}%
+  }%
 }
 \makeatother
 

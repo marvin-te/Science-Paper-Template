@@ -1,17 +1,5 @@
-\pagebreak
-\pagenumbering{roman}
-\setcounter{page}{4}
-
-\section*{Literaturverzeichnis}
-\addcontentsline{toc}{section}{Literaturverzeichnis}
-
-<div id="refs"></div>
-
-\pagebreak
-\appendix
-\section*{Appendix}
-\addcontentsline{toc}{section}{Appendix}
-\renewcommand{\thesubsection}{\Alph{subsection}}
+%% use \beginappendix* if you only want the bibliography %%
+\beginappendix
 
 ## Abbildungen
 
